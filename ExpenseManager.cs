@@ -163,7 +163,7 @@ namespace PersonalExpenseTracker
         public void viewReport()
         {
             MonthlyReport report = new MonthlyReport();
-            if (incomeList.Any() && expenseList.Any())
+            if (!incomeList.Any() && !expenseList.Any())
             {
                 Console.WriteLine(" No transactions available.");
                 return;
